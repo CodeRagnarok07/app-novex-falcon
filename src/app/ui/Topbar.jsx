@@ -1,6 +1,5 @@
 export default function Navbar() {
     return <nav className="flex w-full gap-5 px-5 py-1 bg-white items-center fixed inset-x-0 top-0">
-
         <img src="/icons/icon-144x144.png"
             width={48}
             height={48}

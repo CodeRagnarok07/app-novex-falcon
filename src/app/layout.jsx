@@ -1,10 +1,8 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { meta } from './meta'
+import Topbar from './ui/Topbar'
 import Navbar from './ui/Navbar'
-import Fotter from './ui/Fotter'
-import Car from './ui/Car'
-import List from './ui/List'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,15 +14,13 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className + " bg-black text-white relative"}>
 
-        <Navbar />
-
+        <Topbar />
         <main className="main bg-light">
           {children}
         </main>
-        <List />
-        <Car />
+   
 
-        <Fotter />
+        <Navbar />
 
       </body>
 

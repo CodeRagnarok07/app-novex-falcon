@@ -3,33 +3,33 @@
 @tailwind utilities;
 
 
-html,body{
+html,
+body {
     min-height: 100vh;
     width: 100%;
 }
 
-main{
+main {
     min-height: 100vh;
     width: 100%;
 }
 
-aside{
+aside {
     min-height: 100vh;
-    width: 80%;
+    /* width: 80%; */
 }
 
-aside.left{
-    translate: -100%;
-    animation: all 5s ease-in-out;
+/* aside.left {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+    animation: transform 5s linear; 
 
 }
 
-aside.left:target{
-
-    translate: 0%;
-
-
-}
+aside.left:target {
+    transform: translateX(0%);
+}  */
 
 
 /* 
@@ -57,3 +57,18 @@ aside.left:target{
     
     }
 } */
+
+
+
+/* TEXT */
+
+h2 {
+    color: #000;
+
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    /* 1.25rem */
+    text-decoration-line: underline;
+}

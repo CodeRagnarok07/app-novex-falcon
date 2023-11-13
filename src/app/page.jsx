@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import HomeView from "./ui/Products/HomeView";
 
 export default function Home() {
   return (
-    <div>
-      hola mundo
+    <div className='py-14'>
+      <HomeView/>
     </div>
 
   )
