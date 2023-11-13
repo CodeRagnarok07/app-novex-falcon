@@ -2,26 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+html,body{
+    min-height: 100vh;
+    width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+main{
+    min-height: 100vh;
+    width: 100%;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+aside{
+    min-height: 100vh;
+    width: 80%;
 }
+
+aside.left{
+    translate: -100%;
+    animation: all 5s ease-in-out;
+
+}
+
+aside.left:target{
+
+    translate: 0%;
+
+
+}
+
+
+/* 
+@media (max-width:500px) {
+    .main {
+        max-width: 500px;
+        height: 100vh;
+        object-fit: cover;
+        display: relative;
+        padding: 2rem;
+        position: relative;
+        border-radius: 1rem;
+        @apply bg-light;
+
+
+    }
+
+    .main::before {
+        content: "";
+        position: absolute;
+        background-image: url("/phone_frame.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        inset: -1rem;
+    
+    }
+} */
