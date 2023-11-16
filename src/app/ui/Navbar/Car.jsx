@@ -1,10 +1,10 @@
 export default function Car() {
 
     const message = `\n
-    ============[[ Novex ]]============ \n\n 
+    ========[[ Novex ]]======== 
     hola mary este es un mesaje de prueba \n para compra de productos desde la pagina \n\n
 
-    ============================
+    ======[[ Novex app ]]======
     `
 
     const numero = 4264972551
